@@ -1,18 +1,4 @@
-# rl_reacher
-
-Project Details
-
-The README describes the the project environment details (i.e., the state and action spaces, and when the environment is considered solved).
-
-
-
-Getting Started
-
-The README has instructions for installing dependencies or downloading needed files.
-
-Instructions
-
-The README describes how to run the code in the repository, to train the agent. For additional resources on creating READMEs or using Markdown, see here and here.
+# Reacher Project
 
 
 
@@ -38,8 +24,9 @@ The following libraries need to imported in order to run all the cells in the no
 * matplotlib
 * import pickle
 * pandas
+* copy
 
 ## Running the agent
 To run the agent in the environment and using the different methods one just have to sequantially execute the cells in the notebook. 
 
-All the different methods are in the notebook. However, the code needs to be refractored becuase in order to run the different methods one as to manually do some comment and uncomment in the correct places. The code in its default will run a DQN with eperience replay using softmax with decaying temperature for action selection.
+The function "ddpg" runs the training phase of the networks if nothing else is specified it will for 400 episodes. Before this function is run one also needs to instatiate the StoreResults class which helps with saving some results from the run. In addition the Agent has to be instatiated as well before running the training function.
