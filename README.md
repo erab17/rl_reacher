@@ -17,29 +17,27 @@ The README describes how to run the code in the repository, to train the agent. 
 
 
 ## Introduction
-In this project 20 agents will be trained to keep their arm within a specific zone. The agents job is to keep it's arm in the specifiz zone. The yellow bananas give a +1 reward whereas the blue bananas give a -1 reward.
+In this project 20 agents will be trained to keep their arm within a specific target zone and keep it there throughout time. Each agent have a double-jointed arm.... The agent recieves a +0.1 reward for every time step that the arm is withing the goal zone. 
 
+The state space consists of 26 different states for each which consists of position, rotation, velocity and angular velocities. For the action space there are four continous actions between -1 and +1 that corresponds to the torque to two joints.
+
+In the below gif we can see the 20 different agents and their arms and their respective target zones.
 ![hippo](https://video.udacity-data.com/topher/2018/June/5b1ea778_reacher/reacher.gif)
 
-The agent can take four different actions:
-- Move forward.
-- Move backward.
-- Move left.
-- Move right.
-
-The state space consists of 37 different states including velocity and the ray tracing perception of the agent's forward field of view. 
-
-This is an episodic task becuase the episode will automaticly end after 299 time steps.
+If no time step restriction is set the agent will run for about 1000 timesteps before terminating.
+ 
+The target for the agents is to achieve a rolling reward over 100 episodes of 30 or more of an average of all the agents.
 
 ## Libraries needed
 The following libraries need to imported in order to run all the cells in the notebook
--- UnityEnvironment from unityagents  
--- numpy  
--- random  
--- namedtuple and deque from collections  
--- torch  
--- matplotlib.pyplot  
--- pandas as pd  
+* UnityEnvironment from unityagents  
+* numpy  
+* random  
+* namedtuple and deque from collections  
+* torch  
+* matplotlib
+* import pickle
+* pandas
 
 ## Running the agent
 To run the agent in the environment and using the different methods one just have to sequantially execute the cells in the notebook. 
