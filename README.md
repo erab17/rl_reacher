@@ -30,3 +30,5 @@ The following libraries need to imported in order to run all the cells in the no
 To run the agent in the environment and using the different methods one just have to sequantially execute the cells in the notebook. 
 
 The function "ddpg" runs the training phase of the networks if nothing else is specified it will for 400 episodes. Before this function is run one also needs to instatiate the StoreResults class which helps with saving some results from the run. In addition the Agent has to be instatiated as well before running the training function.
+
+If one wants to use the pretrained network that accomplist the target of achieve +30 reward over all agents for a rolling mean over 100 episodes the file "checkpoint_actor.pth" as to be loaded.
