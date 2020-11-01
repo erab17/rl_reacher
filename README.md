@@ -14,7 +14,7 @@ If no time step restriction is set the agent will run for about 1000 timesteps b
  
 The target for the agents is to achieve a rolling reward over 100 episodes of 30 or more of an average of all the agents.
 
-## Libraries needed
+## Getting Started
 The following libraries need to imported in order to run all the cells in the notebook
 * UnityEnvironment from unityagents  
 * numpy  
@@ -26,7 +26,7 @@ The following libraries need to imported in order to run all the cells in the no
 * pandas
 * copy
 
-## Running the agent
+## Instructions
 To run the agent in the environment and using the different methods one just have to sequantially execute the cells in the notebook. 
 
 The function "ddpg" runs the training phase of the networks if nothing else is specified it will for 400 episodes. Before this function is run one also needs to instatiate the StoreResults class which helps with saving some results from the run. In addition the Agent has to be instatiated as well before running the training function.
