@@ -15,7 +15,19 @@ If no time step restriction is set the agent will run for about 1000 timesteps b
 The target for the agents is to achieve a rolling reward over 100 episodes of 30 or more of an average of all the agents.
 
 ## Getting Started
-The following libraries need to imported in order to run all the cells in the notebook
+1. For setting up the python environment follow the instructions in this link:
+https://github.com/udacity/deep-reinforcement-learning#dependencies
+
+2. Download the environment from one of the links below. You need only select the environment that matches your operating system:
+
+* Linux: click here
+* Mac OSX: click here
+* Windows (32-bit): click here
+* Windows (64-bit): click here
+
+3. Place the file in the repo.
+
+4. The following libraries need to imported in order to run all the cells in the notebook
 * UnityEnvironment from unityagents  
 * numpy  
 * random  
